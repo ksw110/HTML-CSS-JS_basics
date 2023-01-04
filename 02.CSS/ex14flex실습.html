@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: whitesmoke;
+            height: 100px;
+            display: flex;
+            
+            
+        }
+
+        /* .container>div{
+            border: 1px solid black
+            
+        } */
+        a{
+            text-decoration: none;
+        }
+        #box1{
+            /* item 일때 */
+            flex-basis: 15%;
+            /* container 일때 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #box2{
+            /* item 일때 */
+            flex-basis: 70%;
+            /* container 일때 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #box2>a{
+            font-size: 25px;
+            color: black;
+            font-weight: 600;
+            margin: 10px;
+            padding: 15px;
+        }
+        #box3{
+            /* item 일때 */
+            flex-basis: 15%;
+            /* container 일때 */
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        #box3>a{
+            font-size: 25px;
+            color: black;
+            font-weight: 400;
+            margin: 10px;
+            padding: 15px;
+        }
+        #box2>a:hover, #box3>a:hover{
+            background-color: black;
+            color: white;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">
+            <h1>자몽에이드</h1>
+        </div>
+        <div id="box2">
+            <a href="#">메뉴</a>
+            <a href="#">베스트</a>
+            <a href="#">뉴스</a>
+        </div>
+        <div id="box3">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>

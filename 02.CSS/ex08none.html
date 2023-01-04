@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .answer{
+            display: none;
+        }
+
+        /* 질문 위에 마우스를 올리면,
+            질문 옆에 있는 답이 보이게 해줄 것
+         */
+        .question:hover+.answer{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>display : none</h3>
+    <span class="question">Q. 여러분의 최애 음료는 무엇인가요?</span>
+    
+    <span class="answer">A. 아이스아메리카노</span>
+
+    <!-- Q. 여러분의 mbti가 무엇인가요?
+        A. CUTE
+    --><br>
+    <span class="question">Q. 여러분의 mbti가 무엇인가요?</span>
+    <span class="answer">A. ISTP</span>
+</body>
+</html>

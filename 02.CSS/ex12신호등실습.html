@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bbb{
+        width: 120px;
+        height: 360px;
+        background-color: black;
+        border-radius: 20px;
+        padding-top: 10px ;
+        box-sizing: border-box;
+    }
+        .aaa{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        #ccc{
+            background-color: yellow;
+        }
+        #ddd{
+            background-color: green;
+        }
+        /* margin 중첩현상
+            마진을 같은 영역에 여러변 줘도 누적안됨
+            중첩되서 사라짐 */
+    </style>
+</head>
+<body>
+    <div id="bbb">
+        <div class="aaa"></div>
+        <div class="aaa" id="ccc"></div>
+        <div class="aaa" id="ddd"></div>
+    </div>
+</body>
+</html>

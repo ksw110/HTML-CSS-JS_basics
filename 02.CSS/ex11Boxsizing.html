@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            /* 내가 설정한 너비 */
+            width: 500px;
+
+            /* 경계선 */
+            border: 20px solid gray;
+
+            /* 안쪽 여백 */
+            padding: 20px;
+        }
+        /* box-sizing 요소의 크기를 화면에 표시하는 방식 */
+        /* (1) content-box
+        내가 설정한 너비 => 컨텐츠의 너비
+        컨텐츠 영역안을 크기로 삼는 속성
+        패딩, 보더 값이 들어가면 들어간만큼 크기가 커진다
+        */
+        .cb{
+            box-sizing: content-box;
+        }
+
+        /* border-box
+        내가 설정한 너비 => border 안쪽까지의 너비
+        content + padding + border = 내가 설정한 너비
+        패딩 , 보더 값이 들어가도 크기가 커지지 않는다
+         */
+
+         .bb{
+            box-sizing: border-box;
+
+            /* 경계선을 둥굴게 만들어주는 속성 : border-radius */
+            /* border-위/아래-왼/오-radius
+            
+            ex) 위쪽 오른쪽을 둥굴게?
+            border-top-right-radius
+            */
+
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20%;
+            /* 네 모서리를 전부 둥굴게? border-radius */
+            border-radius: 100px;
+         }
+    </style>
+</head>
+<body>
+    <div class="cb">
+        <p>content-box</p>
+    </div>
+    <div class="bb">
+        <p>border-box</p>
+    </div>
+</body>
+</body>
+</html>
