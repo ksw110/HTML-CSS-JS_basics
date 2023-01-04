@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="container">asd</div>
+    <button id="btn">요청</button>
+    <script>
+        let url = 'http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=899a745281dcfb40072536836b7f247a&targetDt=20221201'
+        // 1. getData 라는 함수 선언
+        
+        // 3. getData 함수 구성
+        //     3-1) 영화진흥위원회 api 데이터를 가져올 것(원하는 날짜 데이터)
+        const getData = ()=>{
+            fetch(url)
+            .then(res => res.json()) // 응답 결과를 json 형태로 파싱
+            .then(data =>{
+                console.log(data.boxOfficeResult.weeklyBoxOfficeList)
+            })
+            .catch(err => console.log(err))
+            //     3-2) 내가 가져온 데이터로 테이블 구성 id가 container인 div 안에 넣을 것
+            let inn  = document.getElementById('container')
+            inn.innerHTML = '<table solid black><tr><td></td></tr></tabel>'
+            console.log(inn)
+        }
+        // 2. id가 btn인 버튼을 눌렀을때, getData라는 함수 호출
+        document.querySelector('#btn').addEventListener('click',getData)
+
+        // 힌트
+        // 1) 표는 반복되지 않고, 줄은 반복
+        // <table> -> <tr> -> <td>
+        // 2) 누적이 안되면 변수안에 누적을 하면 된다
+    </script>
+</body>
+</html>

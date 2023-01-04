@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 지금부터 가위바위보를 시작하겠습니다! 
+        // 가위바위보 프로세스는 간단합니다 
+
+        // Step 1. arr이라는 배열에 '가위', '바위', '보' 라는 데이터를 넣습니다 
+
+        // Step 2. 사용자와 컴퓨터의 선택을 입력받습니다. 
+        //      2-1) 사용자의 선택 (prompt 활용) -> myChoice 
+        //            '무엇을 내시겠습니까? (가위, 바위, 보)'
+        //      2-2) 컴퓨터의 선택 (랜덤한 수 활용) -> 배열안에 값을 추출 
+        //              ranNum, comChoice 
+        //      2-3) console창에 나의 선택과 컴퓨터의 선택을 입력한다 
+
+        // Step 3. 가위바위보의 결과를 출력합니다. 
+        //      console창에 결과는 사용자 입장에서 승리, 패배, 무승부 
+        let arr = ['가위','바위','보']
+        let myChoice = prompt('무엇을 내시겠습니까? (가위,바위,보)')
+        let ranNum = parseInt(Math.random()*arr.length)
+        let comChoice = arr[ranNum]
+        console.log('컴퓨터',arr[ranNum])
+        console.log('사용자',myChoice)
+        
+            if(arr[ranNum] == myChoice){
+                console.log('무승부')
+            }else if(arr[ranNum]=='가위' &&  myChoice == '바위'){
+                console.log('승리')
+            }else if(arr[ranNum]=='가위' &&  myChoice == '보'){
+                console.log('패배')
+            }else if(arr[ranNum]=='바위' &&  myChoice == '보'){
+                console.log('승리')
+            }else if(arr[ranNum]=='바위' &&  myChoice == '가위'){
+                console.log('패배')
+            }else if(arr[ranNum]=='보' &&  myChoice == '가위'){
+                console.log('승리')
+            }else if(arr[ranNum]=='보' &&  myChoice == '바위'){
+                console.log('패배')
+            }    
+        let result= ''
+        if(comChoice === myChoice){
+            result = '무승부'
+        }else if(myChoice ==='가위'){
+            result = comChoice ==='바위' ? '패배' : '승리'
+        }else if(myChoice ==='바위'){
+            result = comChoice ==='보' ? '패배' : '승리'  
+        }else if(myChoice ==='보'){
+            result = comChoice ==='가위' ? '패배' : '승리'  
+        }
+        console.log('결과는',result)        
+
+    </script>
+</body>
+</html>
