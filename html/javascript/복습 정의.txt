@@ -1,0 +1,47 @@
+JS 
+내 웹페이지를 동적으로 꾸며주는 언어! 
+
+1. 입출력
+   *** 출력
+   a. 콘솔창에 출력 console.log
+   b. 팝업창에 출력 alert
+
+   *** 입력
+   a. 예, 아니오 confirm => 리턴타입? boolean
+   b. 입력창 O 입력문 prompt
+      => 리턴타입? string 
+
+2. 변수 
+   재선언   재할당   호이스팅
+- var   O   O   O
+- let   X   O   O,오류 (TDZ)
+- const   X   X   O,오류 
+
+3. 자료형 
+
+- number 정수, 실수 포함 
+- string
+- boolean 
+- undefined vs null 
+
+let num ;  //undefined 
+let num = null ; // null 
+NaN (Not a number) 
+
+4. 형변환
+- 문자를 숫자로 
+   a. 정수로 parseInt() 
+   b. 실수로 parseFloat()
+   c. 숫자로 Number() 
+- 숫자를 문자로 
+   a. .toString 진수포함 
+   b. String 문자열만 
+
+5. 연산자
+- / 나누기 연산자 (실제 나눈 값)
+- % 나머지 연산자 
+- == 값만 비교 (자료형 무시) 
+- === 값, 자료형 비교 -> 권장사항 
+- 삼항연산자 조건문 ? 실행문1 : 실행문2 
+- && 두개다 참 
+- || 하나만 참 

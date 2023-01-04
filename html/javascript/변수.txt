@@ -1,0 +1,20 @@
+" num이라는 변수에 3이라는 데이터를 넣겠다 "
+
+-- JAVA 
+int num = 3; 
+--JS
+var num = 3; 
+
+"str이라는 변수에 'hello world'라는 데이터를 넣겠다"
+
+-- JAVA 
+String str = 'hello world' ;
+-- JS 
+var str = 'hello world'; 
+
+"res라는 변수에 true라는 데이터를 넣겠다" 
+
+-- JAVA 
+boolean res = true;
+-- JS
+var res = true.

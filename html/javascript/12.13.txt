@@ -1,0 +1,11 @@
+87177f15fad064485c2a3af94da19aca
+
+http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=899a745281dcfb40072536836b7f247a&targetDt=20221201
+
+만약 유효하지 않은 키값이라고 뜨면?
+
+1) 키값 오타 
+2) 띄어쓰기 여부 
+3) 키 발급 받을 때 url에 문제가 있지는 않은지
+   - 뒤쪽에 / 
+   - vscode 코드 라이브서버에서 작업하다 Eclipse 서버 썼더니 안된다? => url 수정

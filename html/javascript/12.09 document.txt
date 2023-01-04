@@ -1,0 +1,21 @@
+Q. JS 에서 HTML 문서로 접근하기 위해 거쳐야하는 최상위객체 => document 
+
+<h1 id="abc">Hello World!</h1>
+
+Q. id가 abc인 요소를 가져올거에요 
+let abc = document.getElementById('abc')
+
+Q. 내가 가져온 요소의 내용만 가져올거에요 
+abc.innerText
+
+Q. 내가 가져온 요소의 내용을 bye 로 바꿔줄게요 
+abc.innerText = 'bye' 
+
+Q. 내가 가져온 요소의 내용을 h2태그의 bye 로 바꿔줄게요 
+abc.innerHTML = '<h2>bye</h2>' 
+
+Q. 문서에서 h1 태그의 요소를 가져오고싶어요 
+let h1Tag = document.getElementsByTagName('h1')
+
+h1Tag[0].innerText
+

@@ -1,0 +1,25 @@
+DOM 
+Document Object Model 
+문서를 객체로 모델링 
+-- 문서를 모두 포함하고 있는 최상위 객체 : document 
+내가 JS 에서 HTML 문서를 손대려면 무조건! document를 거쳐야한다 
+
+Q. 내가 만약 HTML 문서에 있는 요소를 가져오고 싶다면? 
+- document.getElementByID  
+
+Q. 내가 가져온 요소의 글자만? 
+- .innerText 
+
+Q. HTML 요소까지 같이 ?
+- .innerHTML 
+
+Q. input태그의 값을 ? 
+- .value 
+
+Q. 그 요소의 속성 값 가져오기 
+Case1) getAttribute('속성이름')
+Case2) .속성이름 
+
+Q. 그 요소의 속성 값을 수정하기
+Case1) setAttribute('속성이름','바꿀값'}) 
+Case2) .속성이름 = '바꿀 값' 
